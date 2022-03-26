@@ -1,15 +1,44 @@
 
 <!DOCTYPE html>
-<head></head>
+<head>
+   <title>Looping!</title>
+  <script src="app.js"></script>
+  <style>
+    img {
+      width: 500px;
+    }
+  </style>
+</head>
 <body>
+  First name: <input id="first_name">
+Last name: <input id="last_name">
+<button id="say">Say hi!</button>
     <header>
        <h1 style="color:blue;text-align:center;">My top foods</h1>
         <a href="#">Link to Allens Page</a>
     </header>
+  <hr>
+<div id="result"></div>
+  <script>
+function say_hi() {
+    var fname = document.getElementById('first_name').value;
+    var lname = document.getElementById('last_name').value;
+ 
+    var html = 'Hello <b>' + fname + '</b> ' + lname;
+ 
+    document.getElementById('result').innerHTML = html;
+}
+ 
+document.getElementById('say').addEventListener('click', say_hi);
+</script>
+  
 
     <main>
         <img src="https://media.istockphoto.com/photos/food-backgrounds-table-filled-with-large-variety-of-food-picture-id1155240408?s=612x612"/>
+      
+      
         <ul>
+          
             <button>Click me to see a gallery of lasagna</button><li>Lasagna</li>
              <button>Click me to order food</button><li> Lamb Biryani</li>
             <button>Click me for lobster recipes</button> <li>Lobster/any seafood</li>
@@ -19,6 +48,7 @@
         <p>You can never go wrong with a Lasagna!</p>
         <p>Overseas Biryani is the best!!</p>
         <p>Maine Lobster rolls!!!</p>
+      
     </main>
 
     <footer>
