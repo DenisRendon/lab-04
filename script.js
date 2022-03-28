@@ -14,7 +14,7 @@ function guessNumber() {
   } while (parseInt(answer) !== 1)
 
   if (parseInt(answer) === 1) {
-    document.write("Your'e paying for " + lobsterRolls + " thank you!")
+    document.write("You are paying for " + lobsterRolls + " lobster roll(s). Thank you!")
   }
 
 }
